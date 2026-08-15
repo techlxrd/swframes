@@ -1,0 +1,94 @@
+:root {
+  --sidebar-width: 290px;
+  --f7-safe-area-bottom: 2px !important;
+  --f7-dialog-width: 304px;
+  --f7-toolbar-inner-padding-left: 50px;
+  --f7-toolbar-inner-padding-right: 50px;
+  --f7-toolbar-height: 46px;
+}
+
+html, body {
+  scroll-behavior: smooth;
+  touch-action: manipulation;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+body {
+  position: fixed;
+  overflow: hidden;
+}
+
+a, a:link, a:visited {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.standalone .searchbar-bottom-wrap {
+  bottom: calc(env(safe-area-inset-bottom) - 16px);
+  --f7-searchbar-input-height: 48px;
+  --f7-searchbar-in-page-content-margin: 0px;
+}
+
+.ios .tab-link-highlight {
+  transition-duration: 150ms;
+  will-change: transform;
+}
+
+.color-green { color: #2E7D32; }
+
+@media only screen and (max-device-width: 480px) and (max-device-height: 736px) and (-webkit-min-device-pixel-ratio: 2) {
+  .standalone .searchbar-bottom-wrap {
+    bottom: 16px;
+  }
+}
+.toolbar::before, .toolbar::after, .navbar-large .navbar-bg::before, .navbar-large .navbar-bg::after {
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+.toolbar-pane,
+.left,
+.right,
+.popover,
+.dialog,
+.searchbar-input-wrap,
+.searchbar-disable-button,
+.fab {
+  backdrop-filter: blur(4px) saturate(7) !important;
+  -webkit-backdrop-filter: blur(4px) saturate(7) !important;
+}
+
+.toolbar-pane.dark,
+.dark .toolbar-pane,
+.left.dark,
+.dark .left,
+.right.dark,
+.dark .right,
+.popover.dark,
+.dark .popover,
+.dialog.dark,
+.dark .dialog,
+.fab.dark,
+.fab .dialog {
+  backdrop-filter: blur(6px) saturate(5) !important;
+  -webkit-backdrop-filter: blur(6px) saturate(5) !important;
+}
+
+.dark .searchbar-input-wrap, .dark .searchbar-disable-button {
+  backdrop-filter: blur(6px) saturate(5)!important;
+  -webkit-backdrop-filter: blur(6px) saturate(5) !important;
+}
+.ios .tab-link-highlight {
+  transition-duration: 150ms;
+  will-change: transform;
+}
+.dialog, .dialog-inner {
+  overflow: hidden !important;
+  overscroll-behavior: none !important;
+}
+
+::-webkit-scrollbar { display: none !important; }
