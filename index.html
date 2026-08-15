@@ -1,79 +1,168 @@
-
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
-    <meta name="apple-mobile-web-app-capable" content="yes">  
-    <title>SWFrames</title>
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/framework7-icons@5.0.5/css/framework7-icons.css" integrity="sha256-RSzKDnaL5c8/Ksi7QeDBiOtJSr5k3LbqDGqs4NKDl7M="
-    crossorigin="anonymous">
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/framework7@9/framework7-bundle.min.css">
-       <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
- 
-    <div id="app">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
 
-     
-      <div class="view view-main">
+<title>SWFrames</title>
 
-        <div data-name="home" class="page">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/framework7-icons@5.0.5/css/framework7-icons.css" integrity="sha256-RSzKDnaL5c8/Ksi7QeDBiOtJSr5k3LbqDGqs4NKDl7M=" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/framework7@9/framework7-bundle.min.css">
+<link rel="stylesheet" href="styles.css">
 
-         
-        <div class="navbar navbar-large">
-          <div class="navbar-bg"></div>
-          <div class="navbar-inner">
-            <div class="left" style="visibility:hidden;"></div>
-            <div
-              class="title">Browse</div>
-          <div class="right"><a class="link icon-only popup-open" data-popup="#submitwallpapers"><i class="icon f7-icons">plus</i></a></div>
-          <div
-            class="title-large">
-            <div class="title-large-text">Browse</div>
-            <form class="searchbar searchbar-init searchbar-expandable" data-search-container=".virtual-list"
-              data-search-item="li" data-search-in=".item-title" data-expand="navbar">
-              <div class="searchbar-inner">
-                <div class="searchbar-input-wrap"><input type="search" placeholder="Search"><i class="searchbar-icon"></i><span class="input-clear-button"></span></div>
-                <span
-                  class="searchbar-disable-button"><i class="icon icon-close"></i></span>
-              </div>
-            </form>
-        </div>
-      </div>
-    </div>
+</head>
 
+<body>
 
-    <div class="toolbar tabbar tabbar-icons toolbar-bottom searchbar-hide-on-enable">
-      <div class="toolbar-inner">
-        <div class="toolbar-pane"><a href="#browseTab" class="tab-link tab-link-active" data-tab-title="Browse"><i class="icon f7-icons">layers_fill</i><span class="tabbar-label">Browse</span></a>
-          <a
-            href="#bookmarksTab" class="tab-link" data-tab-title="Bookmarks"><i class="icon f7-icons">bookmark_fill</i><span class="tabbar-label">Bookmarks</span></a><a href="#settingsTab"
-              class="tab-link" data-tab-title="Settings"><i class="icon f7-icons">gear</i><span class="tabbar-label">Settings</span></a>
+<div id="app">
 
-        </div>
-      </div>
-    </div>
+<div class="view view-main">
 
-<div class="page">
+<div data-name="home" class="page">
 
-  <div class="tabs">
-    <div class="page-content tab tab-active" id="browseTab">
-       Tab 1 
-    </div>
-    <div class="page-content tab" id="bookmarksTab">
-      Tab 2
-    </div>
+<div class="navbar navbar-large">
+<div class="navbar-bg"></div>
 
-    <div class="page-content tab" id="settingsTab">
-      Tab 3 content goes here
-    </div>
-  </div>
+<div class="navbar-inner">
+
+<div class="left" style="visibility:hidden;"></div>
+
+<div class="title">Browse</div>
+
+<div class="right">
+<a class="link icon-only popup-open" data-popup="#submitwallpapers">
+<i class="icon f7-icons">plus</i>
+</a>
+</div>
+
+<div class="title-large">
+
+<div class="title-large-text">
+Browse
+</div>
+
+<form class="searchbar searchbar-init searchbar-expandable"
+data-search-container=".virtual-list"
+data-search-item="li"
+data-search-in=".item-title"
+data-expand="navbar">
+
+<div class="searchbar-inner">
+
+<div class="searchbar-input-wrap">
+<input type="search" placeholder="Search">
+<i class="searchbar-icon"></i>
+<span class="input-clear-button"></span>
+</div>
+
+<span class="searchbar-disable-button">
+<i class="icon icon-close"></i>
+</span>
+
+</div>
+
+</form>
+
+</div>
+
+</div>
 </div>
 
 
-  <script defer src="https://cdn.jsdelivr.net/npm/framework7@9/framework7-bundle.min.js"></script>
+<div class="toolbar tabbar tabbar-icons toolbar-bottom searchbar-hide-on-enable">
+
+<div class="toolbar-inner">
+
+<div class="toolbar-pane">
+
+<a href="#browseTab" class="tab-link tab-link-active" data-tab-title="Browse">
+<i class="icon f7-icons">layers_fill</i>
+<span class="tabbar-label">Browse</span>
+</a>
+
+<a href="#bookmarksTab" class="tab-link" data-tab-title="Bookmarks">
+<i class="icon f7-icons">bookmark_fill</i>
+<span class="tabbar-label">Bookmarks</span>
+</a>
+
+<a href="#settingsTab" class="tab-link" data-tab-title="Settings">
+<i class="icon f7-icons">gear</i>
+<span class="tabbar-label">Settings</span>
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="tabs">
+
+
+<div class="page-content tab tab-active" id="browseTab">
+
+<div class="block profile-segmented no-swipe-panel">
+
+<div class="segmented segmented-strong segmented-round">
+
+<a href="#wallpapersTab" class="button tab-link tab-link-active">
+Wallpapers
+</a>
+
+<a href="#iconsTab" class="button tab-link">
+Icon Packs
+</a>
+
+<div class="segmented-highlight"></div>
+
+</div>
+
+</div>
+
+
+<div class="tabs-animated-wrap">
+
+<div class="tabs tabs-animated">
+
+<div class="tab tab-active" id="wallpapersTab">
+Wallpapers
+</div>
+
+<div class="tab" id="iconsTab">
+Icons
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="page-content tab" id="bookmarksTab">
+Tab 2
+</div>
+
+
+<div class="page-content tab" id="settingsTab">
+Tab 3 content goes here
+</div>
+
+
+</div>
+
+
+</div>
+
+</div>
+
+</div>
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/framework7@9/framework7-bundle.min.js"></script>
 <script defer src="app.js"></script>
-  </body>
+
+</body>
 </html>
- 
